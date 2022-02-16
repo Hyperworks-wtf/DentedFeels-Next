@@ -293,6 +293,10 @@ label {
   box-shadow: 1px 1px 0 0 #000;
 }
 
+.df-button {
+  cursor: pointer;
+}
+
 .df-btn-menu {
   display: -webkit-box;
   display: -webkit-flex;

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import { motion, AnimatePresence } from "framer-motion";
@@ -12,11 +13,12 @@ import { injected } from "../components/Connector";
 
 export default function Home() {
   const [hasMetamask, setHasMetamask] = useState(false);
-  const [total, setTotal] = useState(0)
+  const [total, setTotal] = useState(0);
   useEffect(() => {
     if (typeof window.ethereum !== "undefined") {
       setHasMetamask(true);
     }
+    return []
   });
 
   const {
@@ -66,12 +68,12 @@ export default function Home() {
       <div className="df-overfow">
         <div className="df-container">
           <div className="df-hero">
-            <div className="df-cc"><div className="df-image-wrapper"><img src="/images/DentedFeels_Example.png" alt="" className="df-image"/></div></div>
+            <div className="df-cc"><div style={{ position: "relative", width: "300px", height: "300px" }} className="df-image-wrapper"><Image layout="fill" src="/images/DentedFeels_Example.png" alt="" className="df-image"/></div></div>
             <div className="df-wrapper-padding">
               <h1 className="df-header">MINT A DENTED FEEL</h1>
               <p className="df-text">Connecy your Metamask and mint your DentedFeel for 0.1 Eth.</p>
               <div className="df-wrapper-h">
-                <div href="" className="df-connect-btn">
+                <div href="" className="df-connect-btn df-button">
                   {hasMetamask ? (
                     active ? (
                       <div className="df-text" onClick={() => connect()} style={{ color: 'green' }}>{`${account?.slice(0, 4)}...${account?.slice(-4)}`}</div>
@@ -83,21 +85,21 @@ export default function Home() {
                   )}
                 </div>
               </div>
-              <div className="df-divider"><img width="75%" src="/images/DentedFeels_Scribble.svg" loading="lazy" alt=""/></div>
+              <div className="df-divider" style={{ position: "relative", width: "75%", height: "30px"}}><Image layout="fill" objectFit="contain" src="/images/DentedFeels_Scribble.svg" loading="lazy" alt=""/></div>
               <div className="df-wrapper-h">
-                <a href="#" onClick={() => total > 0 && setTotal(total - 1)} className="df-btn-small">
+                <div onClick={() => total > 0 && setTotal(total - 1)} className="df-btn-small df-button">
                   <div className="df-btn-text">-</div>
-                </a>
-                <a href="#" className="df-wide-rounded">
+                </div>
+                <div className="df-wide-rounded">
                   <div className="df-text">Count: {total}</div>
-                </a>
-                <a href="#" onClick={() => total < 3 && setTotal(total + 1)}  className="df-btn-small">
+                </div>
+                <div onClick={() => total < 3 && setTotal(total + 1)}  className="df-btn-small df-button">
                   <div className="df-btn-text">+</div>
-                </a>
+                </div>
               </div>
-                <div className="df-divider"><img width="75%" src="/images/DentedFeels_Scribble.svg" loading="lazy" alt=""/></div>
+              <div className="df-divider" style={{ position: "relative", width: "75%", height: "30px"}}><Image layout="fill" objectFit="contain" src="/images/DentedFeels_Scribble.svg" loading="lazy" alt=""/></div>
                 <div className="df-wrapper-h">
-                  <a href="#" onClick={() => execute()} className="df-mint-btn">
+                  <div onClick={() => execute()} className="df-mint-btn df-button">
                     <div className="df-text">Mint</div><Toaster
                       toastOptions={{
                         className: '',
@@ -108,10 +110,10 @@ export default function Home() {
                         },
                       }}
                     />
-                  </a>
-                  <a href="https://twitter.com/DentedFeelsNFT" target="_blank" className="df-wide-rounded">
+                  </div>
+                  <div target="_blank" className="df-wide-rounded">
                     <div className="df-text">Total: {0.88 * total}Ξ</div>
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
