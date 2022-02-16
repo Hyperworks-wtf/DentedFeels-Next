@@ -62,15 +62,15 @@ export default function Home() {
       <Head>
       <title>DentedFeels - Emotions change, Dreams are forever.</title>
       <link rel="icon" href="../public/favicon.ico"/>
-      <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon"/>
-      <link href="images/webclip.png" rel="apple-touch-icon"/>
+      <link href="/images/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+      <link href="/images/webclip.png" rel="apple-touch-icon"/>
       </Head>
       <Header/>
       <div className="df-section">
       <div className="df-overfow">
         <div className="df-container">
           <div className="df-hero">
-            <div className="df-cc"><div style={{ position: "relative", width: "300px", height: "300px" }} className="df-image-wrapper"><Image layout="fill" src="https://media.giphy.com/media/696LCNZyU9mG0eJGKr/giphy.gif" alt="" className="df-image"/></div></div>
+            <div className="df-cc"><div style={{ position: "relative", width: "300px", height: "300px" }} className="df-image-wrapper"><img layout="fill" src="/images/DentedFeels_Mint.gif" alt="" className="df-image"/></div></div>
             <div className="df-wrapper-padding">
               <h1 className="df-header">MINT A DENTED FEEL</h1>
               <p className="df-text">Connecy your Metamask and mint your DentedFeel for 0.1 Eth.</p>
