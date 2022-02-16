@@ -70,7 +70,7 @@ export default function Home() {
       <div className="df-overfow">
         <div className="df-container">
           <div className="df-hero">
-            <div className="df-cc"><div style={{ position: "relative", width: "400px", height: "400px" }} className="df-image-wrapper"><img layout="fill" src="/images/DentedFeels_Mint.gif" alt="" className="df-image"/></div></div>
+            <div className="df-cc"><div style={{ position: "relative", width: "400px", height: "400px" }} className="df-image-wrapper"><img src="/images/DentedFeels_Mint.gif" alt="" className="df-image"/></div></div>
             <div className="df-wrapper-padding">
               <h1 className="df-header">MINT A DENTED FEEL</h1>
               <p className="df-text">Connecy your Metamask and mint your DentedFeel for 0.1 Eth.</p>
