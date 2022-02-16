@@ -68,7 +68,7 @@ export default function Home() {
       <div className="df-overfow">
         <div className="df-container">
           <div className="df-hero">
-            <div className="df-cc"><div style={{ position: "relative", width: "300px", height: "300px" }} className="df-image-wrapper"><Image layout="fill" src="/images/DentedFeels_Example.png" alt="" className="df-image"/></div></div>
+            <div className="df-cc"><div style={{ position: "relative", width: "300px", height: "300px" }} className="df-image-wrapper"><Image layout="fill" src="https://media.giphy.com/media/696LCNZyU9mG0eJGKr/giphy.gif" alt="" className="df-image"/></div></div>
             <div className="df-wrapper-padding">
               <h1 className="df-header">MINT A DENTED FEEL</h1>
               <p className="df-text">Connecy your Metamask and mint your DentedFeel for 0.1 Eth.</p>
@@ -85,7 +85,7 @@ export default function Home() {
                   )}
                 </div>
               </div>
-              <div className="df-divider" style={{ position: "relative", width: "75%", height: "30px"}}><Image layout="fill" objectFit="contain" src="/images/DentedFeels_Scribble.svg" loading="lazy" alt=""/></div>
+              <div className="df-divider" style={{ position: "relative", width: "75%", height: "30px"}}><img style={{width: "75%",}} src="/images/DentedFeels_Scribble.svg" loading="lazy" alt=""/></div>
               <div className="df-wrapper-h">
                 <div onClick={() => total > 0 && setTotal(total - 1)} className="df-btn-small df-button">
                   <div className="df-btn-text">-</div>
@@ -97,7 +97,7 @@ export default function Home() {
                   <div className="df-btn-text">+</div>
                 </div>
               </div>
-              <div className="df-divider" style={{ position: "relative", width: "75%", height: "30px"}}><Image layout="fill" objectFit="contain" src="/images/DentedFeels_Scribble.svg" loading="lazy" alt=""/></div>
+              <div className="df-divider" style={{ position: "relative", width: "75%", height: "30px"}}><img style={{width: "75%",}} src="/images/DentedFeels_Scribble.svg" loading="lazy" alt=""/></div>
                 <div className="df-wrapper-h">
                   <div onClick={() => execute()} className="df-mint-btn df-button">
                     <div className="df-text">Mint</div><Toaster

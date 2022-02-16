@@ -1,6 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
-
 
 const Footer = () => (
   <>
@@ -10,16 +8,16 @@ const Footer = () => (
       <div className="df-footer-container">
         <div className="df-ticker">
           <div className="df-ticker-wrapper">
-            <div className="df-header-ticker">EMOTIONS CHANGE, DREAMS ARE FOREVER.</div><Image width={"60px"} height={"60px"} objectFit="contain" src="/images/DentedFeels_Spinner.png" loading="lazy" className="df-ticker-img"/>
-            <div className="df-header-ticker">EMOTIONS CHANGE, DREAMS ARE FOREVER.</div><Image width={"60px"} height={"60px"} objectFit="contain" src="/images/DentedFeels_Spinner.png" loading="lazy" className="df-ticker-img"/>
+            <div className="df-header-ticker">EMOTIONS CHANGE, DREAMS ARE FOREVER.</div><img width={"60px"} height={"60px"} objectFit="contain" src="/images/DentedFeels_Spinner.png" loading="lazy" className="df-ticker-img"/>
+            <div className="df-header-ticker">EMOTIONS CHANGE, DREAMS ARE FOREVER.</div><img width={"60px"} height={"60px"} objectFit="contain" src="/images/DentedFeels_Spinner.png" loading="lazy" className="df-ticker-img"/>
           </div>
           <div className="df-ticker-wrapper">
-          <div className="df-header-ticker">EMOTIONS CHANGE, DREAMS ARE FOREVER.</div><Image width={"60px"} height={"60px"} objectFit="contain" src="/images/DentedFeels_Spinner.png" loading="lazy" className="df-ticker-img"/>
-          <div className="df-header-ticker">EMOTIONS CHANGE, DREAMS ARE FOREVER.</div><Image width={"60px"} height={"60px"} objectFit="contain" src="/images/DentedFeels_Spinner.png" loading="lazy" className="df-ticker-img"/>
+          <div className="df-header-ticker">EMOTIONS CHANGE, DREAMS ARE FOREVER.</div><img width={"60px"} height={"60px"} objectFit="contain" src="/images/DentedFeels_Spinner.png" loading="lazy" className="df-ticker-img"/>
+          <div className="df-header-ticker">EMOTIONS CHANGE, DREAMS ARE FOREVER.</div><img width={"60px"} height={"60px"} objectFit="contain" src="/images/DentedFeels_Spinner.png" loading="lazy" className="df-ticker-img"/>
           </div>
           <div className="df-ticker-wrapper">
-          <div className="df-header-ticker">EMOTIONS CHANGE, DREAMS ARE FOREVER.</div><Image width={"60px"} height={"60px"} objectFit="contain" src="/images/DentedFeels_Spinner.png" loading="lazy" className="df-ticker-img"/>
-          <div className="df-header-ticker">EMOTIONS CHANGE, DREAMS ARE FOREVER.</div><Image width={"60px"} height={"60px"} objectFit="contain" src="/images/DentedFeels_Spinner.png" loading="lazy" className="df-ticker-img"/>
+          <div className="df-header-ticker">EMOTIONS CHANGE, DREAMS ARE FOREVER.</div><img width={"60px"} height={"60px"} objectFit="contain" src="/images/DentedFeels_Spinner.png" loading="lazy" className="df-ticker-img"/>
+          <div className="df-header-ticker">EMOTIONS CHANGE, DREAMS ARE FOREVER.</div><img width={"60px"} height={"60px"} objectFit="contain" src="/images/DentedFeels_Spinner.png" loading="lazy" className="df-ticker-img"/>
           </div>
         </div>
         <div className="df-footer-content">

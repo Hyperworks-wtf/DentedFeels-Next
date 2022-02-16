@@ -1,12 +1,11 @@
 import React from 'react'
-import Image from 'next/image'
 
 const Header = () => (
   <>
     <div className="df-navbar">
         <div className="df-navbar-wrapper w-nav">
         <div className=" df-nav-grid">
-            <a href="#" className="df-logo"><Image width={"120px"} height={'30px'} src="/images/DentedFeels_Logo.png" loading="lazy" alt="" className="df-logo-img"/></a>
+            <a href="#" className="df-logo"><img src="/images/DentedFeels_Logo.png" loading="lazy" alt="" className="df-logo-img"/></a>
             <div className="df-navbar-content">
             <a href="https://opensea.io" rel="noreferrer" target="_blank" className="df-btn-small df-btn-none w-inline-block"><img src="/images/opensea.svg" loading="lazy" alt="" className="df-img-small"/></a>
             <a href="https://discord.com" target="_blank" rel="noreferrer" className="df-btn-small df-btn-none w-inline-block"><img src="/images/discord.svg" loading="lazy" alt="" className="df-img-small"/></a>
