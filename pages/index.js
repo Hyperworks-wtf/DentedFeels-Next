@@ -60,8 +60,10 @@ export default function Home() {
   return (
     <div>
       <Head>
-      <title>Dented Feeds</title>
-      <link rel="icon" href="../public/favicon.ico" />
+      <title>DentedFeels - Emotions change, Dreams are forever.</title>
+      <link rel="icon" href="../public/favicon.ico"/>
+      <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+      <link href="images/webclip.png" rel="apple-touch-icon"/>
       </Head>
       <Header/>
       <div className="df-section">
@@ -73,7 +75,7 @@ export default function Home() {
               <h1 className="df-header">MINT A DENTED FEEL</h1>
               <p className="df-text">Connecy your Metamask and mint your DentedFeel for 0.1 Eth.</p>
               <div className="df-wrapper-h">
-                <div href="" className="df-connect-btn df-button">
+                <div className="df-connect-btn df-button" style={{userSelect: "none"}}>
                   {hasMetamask ? (
                     active ? (
                       <div className="df-text" onClick={() => connect()} style={{ color: 'green' }}>{`${account?.slice(0, 4)}...${account?.slice(-4)}`}</div>
@@ -85,22 +87,22 @@ export default function Home() {
                   )}
                 </div>
               </div>
-              <div className="df-divider" style={{ position: "relative", width: "75%", height: "30px"}}><img style={{width: "75%",}} src="/images/DentedFeels_Scribble.svg" loading="lazy" alt=""/></div>
+              <div className="df-divider" style={{ position: "relative", width: "75%", height: "20px"}}><img style={{width: "75%",}} src="/images/DentedFeels_Scribble.svg" loading="lazy" alt=""/></div>
               <div className="df-wrapper-h">
                 <div onClick={() => total > 0 && setTotal(total - 1)} className="df-btn-small df-button">
-                  <div className="df-btn-text">-</div>
+                  <div className="df-btn-text" style={{userSelect: "none"}}>-</div>
                 </div>
                 <div className="df-wide-rounded">
                   <div className="df-text">Count: {total}</div>
                 </div>
                 <div onClick={() => total < 3 && setTotal(total + 1)}  className="df-btn-small df-button">
-                  <div className="df-btn-text">+</div>
+                  <div className="df-btn-text" style={{userSelect: "none"}}>+</div>
                 </div>
               </div>
-              <div className="df-divider" style={{ position: "relative", width: "75%", height: "30px"}}><img style={{width: "75%",}} src="/images/DentedFeels_Scribble.svg" loading="lazy" alt=""/></div>
+              <div className="df-divider" style={{ position: "relative", width: "75%", height: "20px", userSelect: "none"}}><img style={{width: "75%"}} src="/images/DentedFeels_Scribble.svg" loading="lazy" alt=""/></div>
                 <div className="df-wrapper-h">
                   <div onClick={() => execute()} className="df-mint-btn df-button">
-                    <div className="df-text">Mint</div><Toaster
+                    <div className="df-text" style={{userSelect: "none"}}>Mint</div><Toaster
                       toastOptions={{
                         className: '',
                         style: {
@@ -112,7 +114,7 @@ export default function Home() {
                     />
                   </div>
                   <div target="_blank" className="df-wide-rounded">
-                    <div className="df-text">Total: {0.88 * total}Ξ</div>
+                    <div className="df-text" style={{userSelect: "none"}}>Total: {0.88 * total}Ξ</div>
                   </div>
                 </div>
               </div>
