@@ -44,9 +44,10 @@ export default function Home() {
 
   async function execute() {
     if (active) {
-      const signer = provider.getSigner();
-      const contractAddress = "0x5FbDB23156u78afecb367f032d93F642f64180aa3";
-      const contract = new ethers.Contract(contractAddress, abi, signer);
+      toast('Minting Soon!');
+      // const signer = provider.getSigner();
+      // const contractAddress = "0x5FbDB23156u78afecb367f032d93F642f64180aa3";
+      // const contract = new ethers.Contract(contractAddress, abi, signer);
       try {
         await contract.store(42);
       } catch (error) {
@@ -72,13 +73,13 @@ export default function Home() {
           <div className="df-hero">
             <div className="df-cc"><div style={{ position: "relative"}} className="df-image-wrapper"><img src="/images/DentedFeels_Mint.gif" alt="" className="df-image"/></div></div>
             <div className="df-wrapper-padding">
-              <h1 className="df-header">MINT A DENTED FEEL</h1>
-              <p className="df-text">Connecy your Metamask and mint your DentedFeel for 0.1 Eth.</p>
+              <h1 className="df-header">Mint a DentedFeel</h1>
+              <p className="df-text">Connecy your Metamask and mint your DentedFeel for <span className="df-span-a1">0.11 Eth</span></p>
               <div className="df-wrapper-h">
                 <div className="df-connect-btn df-button" style={{userSelect: "none"}}>
                   {hasMetamask ? (
                     active ? (
-                      <div className="df-text" onClick={() => connect()} style={{ color: 'green' }}>{`${account?.slice(0, 4)}...${account?.slice(-4)}`}</div>
+                      <div className="df-text" onClick={() => connect()} style={{ color: '#000' }}>{`${account?.slice(0, 4)}...${account?.slice(-4)}`}</div>
                     ) : (
                       <div className="df-text" onClick={() => connect()}>Connect!</div>
                     )
