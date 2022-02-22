@@ -11,6 +11,7 @@ import { ethers } from "ethers";
 import toast, { Toaster } from 'react-hot-toast';
 import { injected } from "../components/Connector";
 
+
 export default function Home() {
   const [hasMetamask, setHasMetamask] = useState(false);
   const [total, setTotal] = useState(0);
@@ -44,10 +45,10 @@ export default function Home() {
 
   async function execute() {
     if (active) {
-      toast('Minting Soon!');
-      // const signer = provider.getSigner();
-      // const contractAddress = "0x5FbDB23156u78afecb367f032d93F642f64180aa3";
-      // const contract = new ethers.Contract(contractAddress, abi, signer);
+      const signer = provider.getSigner();
+      const abi = ''
+      const contractAddress = "0x5FbDB23156u78afecb367f032d93F642f64180aa3";
+      const contract = new ethers.Contract(contractAddress, abi, signer);
       try {
         await contract.store(42);
       } catch (error) {
