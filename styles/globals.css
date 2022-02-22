@@ -375,10 +375,7 @@ label {
 }
 
 .df-ticker {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   padding-top: 6vh;
   padding-bottom: 6vh;
   -webkit-box-align: center;
@@ -653,7 +650,7 @@ label {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 80vh;
+  min-height: 90vh;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -800,9 +797,6 @@ label {
 
   .df-hero {
     width: 100%;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
   }
 
   .df-image-wrapper {
@@ -818,6 +812,15 @@ label {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 790px){
+  .df-hero {
+    width: 100%;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
 }
 
