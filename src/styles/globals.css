@@ -111,7 +111,6 @@ label {
   justify-content: center;
 }
 
-
 .df-content-wrapper {
   position: relative;
   display: -webkit-box;
@@ -134,8 +133,6 @@ label {
   align-items: flex-start;
   text-align: left;
 }
-
-
 
 .df-content-wrapper.right {
   -webkit-box-align: end;
@@ -180,8 +177,8 @@ label {
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  -ms-grid-columns: 1fr 1fr ;
-  grid-template-columns: 1fr 1fr ;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
@@ -271,7 +268,6 @@ label {
   width: 120px;
   height: 100%;
 }
-
 
 .df-mint-btn {
   margin-right: 20px;
@@ -436,7 +432,7 @@ label {
   width: 100%;
   height: 50px;
   margin-bottom: -5px;
-  background-image: url('../public/images/DentedFeels_Divider.svg');
+  background-image: url("../assets/images/DentedFeels_Divider.svg");
   background-position: 50% 100%;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -480,7 +476,6 @@ label {
 .df-btn-small:hover {
   background-color: #d8d8d8;
 }
-
 
 .df-navbar-content {
   display: -webkit-box;
@@ -726,7 +721,6 @@ label {
 
 .df-connect-btn:hover {
   background-color: #d8d8d8;
-  color: #d8d8d8;
 }
 
 .df-header-ticker {
@@ -755,7 +749,6 @@ label {
   .df-overfow {
     padding-top: 100px;
   }
-
 
   .df-footer {
     padding-top: 10px;
@@ -815,7 +808,7 @@ label {
   }
 }
 
-@media screen and (max-width: 790px){
+@media screen and (max-width: 790px) {
   .df-hero {
     width: 100%;
     -ms-grid-columns: 1fr;
@@ -854,7 +847,6 @@ label {
     font-weight: 400;
   }
 
-
   .df-ticker-img.small {
     height: 32px;
     margin-right: 10px;
@@ -873,8 +865,6 @@ label {
   .card-grid-wrapper:hover {
     background-color: transparent;
   }
-
-
 
   .df-wrapper-padding {
     padding-right: 0px;
@@ -1032,15 +1022,17 @@ label {
 }
 
 @font-face {
-  font-family: 'Tanker';
-  src: url('../public/fonts/Tanker-Regular.woff') format('woff'), url('../public/fonts/Tanker-Regular.ttf') format('truetype');
+  font-family: "Tanker";
+  src: url("../assets/fonts/Tanker-Regular.woff") format("woff"),
+    url("../assets/fonts/Tanker-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Bodoamat';
-  src: url('../public/fonts/BodoAmat.89e67a84324085ac5645e80742e57c43.otf') format('opentype');
+  font-family: "Bodoamat";
+  src: url("../assets/fonts/BodoAmat.89e67a84324085ac5645e80742e57c43.otf")
+    format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
